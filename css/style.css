@@ -1,0 +1,406 @@
+body {
+    overflow-x: hidden;
+    background-color: rgb(35 34 38);
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    height: 10%;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    z-index: -1;
+}
+
+.fixed-video {
+    position: fixed;
+    top: 0;
+    
+    opacity: 0.5;
+    filter: blur(7px) brightness(0.7) saturate(0.2);
+    z-index: -3;
+    width: 100%;
+}
+
+.fixed-title {
+    position: fixed;
+    z-index: -1;
+    width: 80%;
+    text-shadow: 0px 5px 20px rgba(0,0,0,0.6);
+}
+
+h1,h2 {
+    margin: 0%;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h2, h3 {
+    color : #b1d6f5
+}
+
+.text {
+    font-size: 20px;
+    text-align: justify;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+}
+
+.title {
+    color: rgb(10 177 236);
+    font-size: 100px;
+    text-align: center;
+}
+.subtitle {
+    color: rgb(177 214 245);
+    font-size: 30px;
+    text-align: center;
+}
+
+.stitle {
+    background-color: #052f5c;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* CONTACT */
+
+.contact-container {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 4%;
+    width: 30px;
+    margin-left: 2%;
+    align-items: center;
+}
+
+.nav-bar {
+    z-index: 10;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: left;
+    top: 4%;
+    margin-right: 2%;
+    right:0%;
+}
+
+.nav-text {
+    text-align: right;
+    color: black;
+    font-size: 14px;
+    margin: 0%;
+    padding: 0%;
+    transition: 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-text:hover {
+    color: rgb(177 214 245);
+    font-size: 16px; 
+}  
+#discord, #instagram, #twitter {
+    margin-bottom: 30px;
+}
+
+.icons {
+    width: 90%;
+    height: 90%;
+    transition: 0.3s ease-in-out;
+}
+.icons:hover {
+    fill: rgb(177 214 245);
+    width: 100%;
+    height: 100%;
+}
+
+/* CENTER */
+
+.doubleText-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+.doubleText-container > :nth-child(1) {
+    margin-right: 20px;
+    width: 40%;
+}
+
+.doubleText-container > :nth-child(2) {
+    margin-left: 20px;
+    width: 40%;
+}
+.projets {
+    z-index: 3;
+    width: 100%;
+    background-color: rgb(5 99 202);
+}
+
+.info-container {
+    padding: 5%;
+}
+
+.prix {
+    padding: 10%;
+    z-index: 4;
+    background-color: #052f5c;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+#tiktokVideo, #youtubeVideo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+}
+
+.separator {
+    width: 10px;
+    border-radius: 5px;
+    margin: 2%;
+    height: 200px;
+    background-color: #062f5c;
+    box-shadow: 0px 1px 40px 2px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 0px 1px 40px 2px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 1px 40px 2px rgba(0,0,0,0.58);
+
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    z-index: 6;
+    width: 90%;
+}
+
+.a-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.video-button {
+    border-radius: 8px;
+    background-color: #062f5c;
+    text-align: center;
+    color: #b1d6f5;
+    padding: 15px;
+    margin: 15px;
+    width: 100%;
+    transition: all 0.3s ease-in-out ; /* Ajoute une transition pour l'effet de flou et la couleur de fond */
+    box-shadow: 0px 1px 40px 2px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 0px 1px 40px 2px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 1px 40px 2px rgba(0,0,0,0.58);
+}
+
+.video-button:hover {
+    background-color: #0ab1ec;
+    color: #000b18;
+    stroke: #000b18;
+    transform: scale(1.1);
+}
+
+#arrow {
+    width: 1rem;
+    height: 1rem;
+    stroke: #b1d6f5;
+    transition: 0.3s ease-in-out;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.net {
+    filter: blur(0px);
+}
+
+.comp-case {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 7;
+}
+.compIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #b1d6f5;
+}
+
+.comp-text {
+    width: 50%;
+}
+
+.comp-pourc {
+    width: 50%;
+    height: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pourc-container {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #062f5c;
+}
+
+.pourc {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #0ab1ec;
+}
+
+#premiere {
+    width: 80%;
+}
+
+#after {
+    width: 50%;
+}
+
+#photoshop {
+    width: 70%;
+}
+#replay {
+    width: 90%;
+}
+
+.espacer {
+    width: 100%;
+    height: 20vh;
+}
+
+/* SVG */
+
+.spacer {
+    width: 100%;
+    margin-bottom: -7px;
+}
+
+#visual {
+    width: 110%;
+    margin-left: -20px;
+}
+
+/* CSS TRANSITION */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.layer3 {
+    background-image: url('../images/section3.svg');
+}
+
+
+.mobile {
+    display: none;
+}
+
+@media (max-width:768px) {
+
+    .title {
+        font-size: 50px;
+    }
+
+    .projets {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .info-container {
+        padding: 10%;
+    }
+
+    .spacer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #visual {
+        width: 100%;
+    }
+
+    .doubleText-container {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .doubleText-container > :nth-child(1) {
+        margin-right: 0px;
+        width: 80%;
+    }
+    
+    .doubleText-container > :nth-child(2) {
+        margin-left: 0px;
+        width: 80%;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .contact-container {
+        display: none;
+    }
+
+    .video-container {
+        flex-direction: column;
+    }
+
+    #tiktokVideo, #youtubeVideo {
+        padding:0px;
+    }
+}
