@@ -353,18 +353,7 @@ p, h2, h3 {
     .info-container {
         padding: 10%;
     }
-
-    .spacer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    #visual {
-        width: 110%;
-    }
-
+    
     .doubleText-container {
         display: none;
     }
