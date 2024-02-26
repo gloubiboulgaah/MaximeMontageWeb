@@ -28,14 +28,11 @@ let isDragging = false;
 draggableIcon.addEventListener('mousedown', (e) => {
     isDragging = true;
 
-    // Calculer la différence entre la position de la souris et la position de l'icône
     const offsetX = e.clientX - draggableIcon.getBoundingClientRect().left;
     const offsetY = e.clientY - draggableIcon.getBoundingClientRect().top;
 
-    // Ajouter un écouteur d'événement pour suivre le mouvement de la souris
     document.addEventListener('mousemove', handleMouseMove);
 
-    // Empêcher la sélection de texte pendant le glisser-déposer
     e.preventDefault();
 });
 
@@ -43,14 +40,12 @@ document.addEventListener('mouseup', () => {
     if (isDragging) {
     isDragging = false;
 
-    // Retirer l'écouteur d'événement lorsque le bouton de la souris est relâché
     document.removeEventListener('mousemove', handleMouseMove);
     }
 });
 
 function handleMouseMove(e) {
     if (isDragging) {
-        // Mettre à jour la position de l'icône en fonction du mouvement de la souris
         const x = e.clientX - iconContainer.getBoundingClientRect().left;
         const y = e.clientY - iconContainer.getBoundingClientRect().top;
 
@@ -157,6 +152,26 @@ const tween11 = KUTE.fromTo(
     { repeat: 999, duration: 3500, yoyo: true }
 )
 
+const tween12 = KUTE.fromTo(
+    '#rob1',
+    { path: '#rob1' },
+    { path: '#rob2' },
+    { repeat: 999, duration: 5000, yoyo: true }
+)
+
+const tween13 = KUTE.fromTo(
+    '#rob3',
+    { path: '#rob3' },
+    { path: '#rob4' },
+    { repeat: 999, duration: 4500, yoyo: true }
+)
+
+const tween14 = KUTE.fromTo(
+    '#rob5',
+    { path: '#rob5' },
+    { path: '#rob6' },
+    { repeat: 999, duration: 4000, yoyo: true }
+)
 tween1.start()
 tween2.start()
 tween3.start()
@@ -168,3 +183,6 @@ tween8.start()
 tween9.start()
 tween10.start()
 tween11.start()
+tween12.start()
+tween13.start()
+tween14.start()
